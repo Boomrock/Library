@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Library
 {
+    /// <summary>
+    /// класс автомобиля 
+    /// </summary>
     public class Automobile
     {
         /*В классе описываются такие атрибуты как, Марка, модель, год выпуска, год прохождения технического осмотра, владелец, и некоторые другие, 
@@ -67,7 +70,14 @@ namespace Library
             owner = null;
             debt = 0;
         }
-
+        /// <summary>
+        /// конструктор класса автомобиль
+        /// </summary>
+        /// <param name="brand"></param>
+        /// <param name="model"></param>
+        /// <param name="yearOFIssue"></param>
+        /// <param name="yearOfTecnicalInspection"></param>
+        /// <param name="owner"></param>
         public Automobile(string brand, string model, short yearOFIssue, short yearOfTecnicalInspection, string owner)
         {
             this.brand = brand ?? throw new ArgumentNullException(nameof(brand));
@@ -76,7 +86,7 @@ namespace Library
             this.yearOfTecnicalInspection = yearOfTecnicalInspection;
             this.owner = owner ?? throw new ArgumentNullException(nameof(owner));
         }
-
+        
         public Automobile(string brand, string model, short yearOFIssue, short yearOfTecnicalInspection, string owner, int debt) : this(brand, model, yearOFIssue, yearOfTecnicalInspection, owner)
         {
              
