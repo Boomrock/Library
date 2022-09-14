@@ -41,7 +41,7 @@ namespace Library
         /// <summary>
         /// Год Выпуска машины 
         /// </summary>
-        public int YearOFIssue1 { get => yearOFIssue; }
+        public int YearOFIssue { get => yearOFIssue; }
         /// <summary>
         /// год технического осмотра yearOfTecnicalInspection > 0
         /// </summary>
